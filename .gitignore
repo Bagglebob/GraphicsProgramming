@@ -1,0 +1,27 @@
+# Ignore Visual Studio project files
+*.vcxproj
+*.vcxproj.*
+*.sln
+*.user
+*.obj
+*.exe
+*.log
+*.ipch
+*.pch
+*.tlog
+*.idb
+*.opendb
+*.db
+*.sdf
+*.VC.db
+*.vscode/
+
+# Ignore build folders
+build/
+Debug/
+Release/
+
+.vs
+*.exe
+x64/
+
