@@ -34,4 +34,3 @@ and would run the optimized program like this:
     ```
 - If you change image_width to 512, i,j now runs 0–511
 - using int(i) or int(j) would result in overflow (PPM expects color channels in [0, 255])
-- 
