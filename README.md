@@ -2,8 +2,8 @@
 
 ## Chapter #2
 On Windows, you'd get the debug build from CMake running this command:
-`cmake -B build`
-`cmake --build build`
+```cmake -B build```
+```cmake --build build```
 
 Then run your newly-built program like so:
 `build\Debug\OutputImage.exe > image.ppm`
@@ -20,3 +20,4 @@ and would run the optimized program like this:
 - Some people don't like this because it doesn't prevent you from doing something silly, like subtracting a position from a color. 
 
 - we declare two aliases for vec3: point3 and color to differentiate
+
