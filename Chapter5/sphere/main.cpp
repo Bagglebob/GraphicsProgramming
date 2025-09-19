@@ -1,11 +1,29 @@
-#include "color.h"
+﻿#include "color.h"
 #include "ray.h"
 #include "vec3.h"
 #include <fstream>
 #include <iostream>
 
+// this checks if there are any rays that intersect with the sphere
+// returns true if discriminant >= 0 (1 or more solutions)
+bool hit_sphere(const vec::point3& center, double radius, const ray& r) {
+    vec::vec3 oc = center - r.origin(); // oc = C - Q
+    auto a = dot(r.direction(), r.direction());
+    auto b = -2.0 * dot(r.direction(), oc); // = -2 (d·(C−Q))
+    auto c = dot(oc, oc) - radius * radius; // = (C−Q)·(C−Q) - r^2
+    auto discriminant = b * b - 4 * a * c;
+    return (discriminant >= 0);
+}
+
 // ray_color takes the second parameter (the direction of the ray), and normalizes it.
 color ray_color(const ray& r, bool debug = false, std::ofstream* debug_file=nullptr) {
+    // if the ray intersects the sphere (discriminant >= 0), then return rgb(1,0,0)
+    // hit_sphere(sphereCenter, radius, ray& r)
+    if (hit_sphere(vec::point3(0, 0, -1), 0.5, r))
+        return color(1, 0, 0);
+    
+    // if the ray doesn't intersect the sphere, then return the sky color
+    // sky color is derived through linear interpolation
     vec::vec3 unit_direction = unit_vector(r.direction());
     auto a = 0.5 * (unit_direction.y() + 1.0);    
     color result = (1.0 - a) * color(1.0, 1.0, 1.0) + a * color(0.5, 0.7, 1.0);
@@ -21,6 +39,8 @@ color ray_color(const ray& r, bool debug = false, std::ofstream* debug_file=null
     }
     return result;
 }
+
+
 
 
 int main(int argc, char** argv) {
