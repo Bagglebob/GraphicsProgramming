@@ -16,4 +16,5 @@ and would run the optimized program like this:
 `build\Release\OutputImage.exe > image.ppm`
 
 # Chapters
-Each chapter has its own README.md file which specifies the learning outcomes and notes
+Each chapter has its own README.md file which specifies the learning outcomes and notes. You can find this in Chapter#/projectName/README.md
+
