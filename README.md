@@ -14,3 +14,6 @@ Later, it will be better to run optimized builds for speed. In that case, you wo
 
 and would run the optimized program like this:
 `build\Release\OutputImage.exe > image.ppm`
+
+# Chapters
+Each chapter has its own README.md file which specifies the learning outcomes and notes
