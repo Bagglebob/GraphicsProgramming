@@ -7,10 +7,10 @@
 // this checks if there are any rays that intersect with the sphere
 // returns true if discriminant >= 0 (1 or more solutions)
 bool hit_sphere(const vec::point3& center, double radius, const ray& r) {
-    vec::vec3 oc = center - r.origin(); // oc = C - Q
-    auto a = dot(r.direction(), r.direction());
-    auto b = -2.0 * dot(r.direction(), oc); // = -2 (d·(C−Q))
-    auto c = dot(oc, oc) - radius * radius; // = (C−Q)·(C−Q) - r^2
+    vec::vec3 oc = center - r.origin(); // oc = C - Q (Q = ray origin)
+    auto a = dot(r.direction(), r.direction()); // a = d·d
+    auto b = -2.0 * dot(r.direction(), oc); // b = -2 (d·(C−Q))
+    auto c = dot(oc, oc) - radius * radius; // c = (C−Q)·(C−Q) - r^2
     auto discriminant = b * b - 4 * a * c;
     return (discriminant >= 0);
 }

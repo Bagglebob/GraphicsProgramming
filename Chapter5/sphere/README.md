@@ -10,7 +10,7 @@ $$x^2 + y^2 = r^2$$
 - Similarly, the **equation of a Sphere centered at the origin** is:
 $$x^2 + y^2 + z^2 = r^2$$
 
-- The **distance from the origin (0,0,0) to a point (x,y,z)** is:
+- The distance from the origin (0,0,0) to a point (x,y,z) **on the sphere** is:
 $$\sqrt{x^2 + y^2 + z^2} = r$$
 
 - A **point inside the sphere** would be less than r units away from the origin:
@@ -64,12 +64,17 @@ $$t^2(d⋅d)-2t(d⋅(C-Q))+(C-Q)⋅(C-Q)-r^2=0$$
 
 $$at^2+bt+c=0$$
 
+
+**Q = ray origin**
+
 Where:
 $$a=d⋅d$$ so, $$ax^2=t^2(d⋅d)$$
 
 $$b=-2d⋅(C-Q))$$
 
 $$c=(C-Q)⋅(C-Q)-r^2$$
+
+
 
 ##### Quadratic Formula
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
