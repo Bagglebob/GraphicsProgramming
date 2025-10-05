@@ -7,7 +7,7 @@
 1. Compute the length (magnitude) of the vector v=(x,y,z):
 $$||v||=\sqrt{x^2+y^2+z^2}$$
 
-2. Divide each component by that length (length$=||v||$):
+2. Divide each component by that length (length $=||v||$):
 
 $$\hat{\mathbf{v}}=\bigg(\frac{x}{||v||}, \frac{y}{||v||}, \frac{z}{||v||}\bigg)$$
 
