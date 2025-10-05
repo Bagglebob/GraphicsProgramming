@@ -63,7 +63,7 @@ if (t > 0.0) {
 ## Dot Product and Length
 - **"a vector dotted with itself is equal to the squared length of that vector"**
 - Proof:
-    - Dot Product of itself: $$ v⋅v=v_xv_x+v_yv_y+v_zv_z=v_x^2+v_y^2+v_z^2$$
+    - Dot Product of itself: $$v⋅v=v_xv_x+v_yv_y+v_zv_z=v_x^2+v_y^2+v_z^2$$
     - Length of a vector: $$||v||=\sqrt{v_x^2+v_y^2+v_z^2}$$
     - Squared Length of a vector: $$||v||^2=v_x^2+v_y^2+v_z^2$$
 
