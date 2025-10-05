@@ -75,15 +75,15 @@ if (t > 0.0) {
 
 **Simplifying**
 - if $b=−2h$, the quadratic equation can be simplified to:
-    - $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-    - $$ x = {-(-2h) \pm \sqrt{(-2h)^2-4ac} \over 2a} $$
-    - $$ x = {2h \pm \sqrt{4h^2-4ac} \over 2a} $$
-    - $$ x = {2h \pm \sqrt{4(h^2-ac)} \over 2a} $$
-    - $$ x = {2h \pm \sqrt{4}⋅\sqrt{(h^2-ac)} \over 2a} $$    
-    - $$ x = {2h \pm 2\sqrt{h^2-ac} \over 2a} $$
+    - $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+    - $$x = {-(-2h) \pm \sqrt{(-2h)^2-4ac} \over 2a}$$
+    - $$x = {2h \pm \sqrt{4h^2-4ac} \over 2a}$$
+    - $$x = {2h \pm \sqrt{4(h^2-ac)} \over 2a}$$
+    - $$x = {2h \pm \sqrt{4}⋅\sqrt{(h^2-ac)} \over 2a}$$    
+    - $$x = {2h \pm 2\sqrt{h^2-ac} \over 2a}$$
 - and to factor out 2 from the whole equation
-    - $$ x = {2(h \pm \sqrt{h^2-ac}) \over 2a} $$
-    - $$ x = {h \pm \sqrt{h^2-ac} \over a} $$
+    - $$x = {2(h \pm \sqrt{h^2-ac}) \over 2a}$$
+    - $$x = {h \pm \sqrt{h^2-ac} \over a}$$
 
 ### `hit_sphere()` previously:
 ray intersection equation: $$t^2(d⋅d)-2t(d⋅(C-Q))+(C-Q)⋅(C-Q)-r^2=0$$
